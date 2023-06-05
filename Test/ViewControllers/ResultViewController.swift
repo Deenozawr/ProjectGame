@@ -7,19 +7,20 @@
 
 import UIKit
 
-class ResultViewController: UIViewController {
+final class ResultViewController: UIViewController {
 
     @IBOutlet var resultLabel: UILabel!
     
-    var answersChosen: [Answer]!
+    var answersChosen: [Answer] = []
+    var rightAnswersCount = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.setHidesBackButton(true, animated: true)
+        navigationItem.hidesBackButton = true
         
         let result = answersChosen.count
-        resultLabel.text = "Total result is \(result) out of \(answersChosen.count)"
+        resultLabel.text = "Total result is \(rightAnswersCount) out of \(result)"
     }
     
 
@@ -29,3 +30,4 @@ class ResultViewController: UIViewController {
     
 
 }
+// В конце, не забыть про инкапсуляцию (сделать все метода и свойства привтаными, если они не будут использоваться вне класса)

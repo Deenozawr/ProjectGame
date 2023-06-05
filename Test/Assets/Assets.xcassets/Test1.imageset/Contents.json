@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "desktop-wallpaper-cinema-background-with-movie-objects-vector-1823382-cinema-screen.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
